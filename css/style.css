@@ -1,0 +1,128 @@
+/* css stylesheet */
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* shop name section */
+.name{
+  color:rgb(83, 83, 83);
+  font-weight:bolder;
+  margin-left: 20px;
+}
+#first-part{
+  color: green;
+}
+
+/* search field area */
+.navbar-light{
+  box-shadow: 1px 1px 7px gray;
+}
+.search-field {
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  outline: none;
+}
+.search-field:hover {
+  outline: none;
+  border: none;
+}
+.search-box {
+  border: 1px solid rgb(1, 124, 42);
+  width: 283.5px;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 7px rgb(180, 245, 180);
+}
+.search-button {
+  padding: 10px 50px;
+  border-radius: 25px;
+  margin-left: 20px;
+}
+
+/* products card section */
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.single-product {
+  padding: 10px;
+  transition: 0.6s;
+  background: rgb(242, 253, 242);
+  margin: 10px;
+  border: 1px solid rgb(161, 231, 161);
+  border-radius: 20px;
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid rgb(1, 0, 8);
+  background: rgb(212, 248, 212);
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+/* Add to cart section */
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+  background: rgb(242, 253, 242);
+}
+.cart-main {
+  padding-right: 30px;
+}
+.fa-star{
+  color: rgb(146, 145, 145);
+}
+
+/* copyright footer section */
+#copyright{
+  background: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
